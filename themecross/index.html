@@ -3,133 +3,117 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Просто Сканворд — современный русский сканворд с живой лексикой, чистым интерфейсом и разумным балансом рекламы.">
+  <meta name="description" content="Просто Сканворд — современный русский сканворд с живой лексикой, чистым интерфейсом и понятными подсказками.">
+  <link rel="canonical" href="https://dimaershov.github.io/themecross/">
+  <link rel="alternate" hreflang="ru" href="https://dimaershov.github.io/themecross/">
+  <link rel="alternate" hreflang="en" href="https://dimaershov.github.io/themecross/en/">
+  <link rel="stylesheet" href="styles.css">
   <title>Просто Сканворд — современный русский сканворд</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --ink: #13283b;
-      --muted: #587083;
-      --blue: #0f6aa8;
-      --deep: #082f50;
-      --ice: #eef8ff;
-      --line: #cfe3f0;
-      --white: #fff;
-      --green: #42b96b;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--ink);
-      background: var(--ice);
-    }
-    header {
-      color: var(--white);
-      background: var(--deep);
-      padding: 72px 20px 64px;
-    }
-    .wrap { width: min(920px, 100%); margin: 0 auto; }
-    h1 {
-      max-width: 760px;
-      margin: 0 0 16px;
-      font-size: clamp(42px, 8vw, 72px);
-      line-height: 1.02;
-      letter-spacing: 0;
-    }
-    .lead {
-      max-width: 700px;
-      margin: 0;
-      color: #d8edfb;
-      font-size: 21px;
-    }
-    main { padding: 48px 20px 64px; }
-    h2 { margin: 0 0 16px; font-size: 28px; line-height: 1.2; }
-    p { margin: 0 0 18px; }
-    .intro { max-width: 760px; }
-    .features {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-      margin: 36px 0 48px;
-    }
-    .feature {
-      padding: 22px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: var(--white);
-    }
-    .feature strong { display: block; margin-bottom: 6px; font-size: 18px; }
-    .feature p { margin: 0; color: var(--muted); }
-    .note {
-      margin: 40px 0;
-      padding: 22px;
-      border-left: 4px solid var(--green);
-      background: var(--white);
-    }
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 18px;
-      padding-top: 28px;
-      border-top: 1px solid var(--line);
-    }
-    a { color: var(--blue); font-weight: 650; }
-    footer { margin-top: 34px; color: var(--muted); font-size: 14px; }
-    @media (max-width: 640px) {
-      header { padding-top: 52px; }
-      .features { grid-template-columns: 1fr; }
-    }
-  </style>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <h1>Просто Сканворд</h1>
-      <p class="lead">Современный русский сканворд с живой лексикой, чистым интерфейсом и без ощущения, что вы листаете старый справочник.</p>
+  <header class="hero">
+    <div class="wrap hero-inner">
+      <nav class="topbar" aria-label="Выбор языка">
+        <a class="brand" href="./">Просто Сканворд</a>
+        <div class="language-switcher">
+          <span aria-current="page">RU</span>
+          <a href="en/" lang="en" hreflang="en">EN</a>
+        </div>
+      </nav>
+      <div class="hero-copy">
+        <p class="eyebrow">Слова, которыми мы пользуемся сегодня</p>
+        <h1>Сканворд без пыли старого справочника</h1>
+        <p class="lead">Живая русская лексика, чистая сетка и понятные подсказки. Открывайте уровень и разгадывайте в своём темпе.</p>
+        <a class="button" href="#screenshots">Посмотреть игру</a>
+      </div>
     </div>
   </header>
 
   <main>
-    <div class="wrap">
-      <section class="intro">
-        <h2>Слова, которыми мы пользуемся сегодня</h2>
-        <p>При составлении сеток используются современные частотные словари, живая русская лексика и понятные отсылки к современной культуре. Вопросы должны быть интересными, а интерфейс — помогать разгадывать, а не мешать.</p>
-        <p>Откройте сетку, выберите вопрос и вводите ответ. Прогресс сохраняется, подсказки всегда под рукой, а новые уровни открываются по мере прохождения.</p>
-      </section>
+    <section class="section wrap intro">
+      <div>
+        <p class="eyebrow dark">Просто начать</p>
+        <h2>Выберите вопрос — и вводите ответ</h2>
+      </div>
+      <div class="intro-copy">
+        <p>Сетки составлены с опорой на современные частотные словари, живую русскую лексику и узнаваемые культурные отсылки.</p>
+        <p>Прогресс сохраняется автоматически, подсказки всегда под рукой, а новые уровни открываются по мере прохождения.</p>
+      </div>
+    </section>
 
-      <section class="features" aria-label="Особенности приложения">
-        <article class="feature">
-          <strong>Современная лексика</strong>
-          <p>Частотные словари, узнаваемые слова и актуальные культурные отсылки.</p>
-        </article>
-        <article class="feature">
-          <strong>Чистый интерфейс</strong>
-          <p>Быстрый ввод, понятные подсказки и минимум визуального шума.</p>
-        </article>
-        <article class="feature">
-          <strong>Разумная реклама</strong>
-          <p>Дополнительную рекламу за монеты или награду запускаете вы сами.</p>
-        </article>
-        <article class="feature">
-          <strong>Удобно на iPad</strong>
-          <p>Горизонтальный режим даёт больше места сетке, вопросам и управлению.</p>
-        </article>
-      </section>
+    <section class="features wrap" aria-label="Особенности приложения">
+      <article class="feature">
+        <strong>Современная лексика</strong>
+        <p>Знакомые слова и актуальные культурные отсылки.</p>
+      </article>
+      <article class="feature">
+        <strong>Чистый интерфейс</strong>
+        <p>Быстрый ввод и минимум визуального шума.</p>
+      </article>
+      <article class="feature">
+        <strong>Подсказки по делу</strong>
+        <p>Перемешайте буквы или откройте часть ответа.</p>
+      </article>
+      <article class="feature">
+        <strong>Удобно на iPad</strong>
+        <p>Горизонтальный режим даёт сетке больше места.</p>
+      </article>
+    </section>
 
-      <aside class="note">
-        <strong>Язык игры:</strong> игровые сетки, вопросы и ответы сейчас доступны на русском языке.
-      </aside>
+    <section class="showcase" id="screenshots">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="eyebrow dark">Как это выглядит</p>
+          <h2>От первого экрана до разгаданной сетки</h2>
+        </div>
+        <div class="gallery" aria-label="Скриншоты приложения">
+          <figure class="screenshot">
+            <img src="assets/screenshots/01-main-menu.png" alt="Главное меню приложения Просто Сканворд" width="647" height="1400" loading="lazy">
+            <figcaption><strong>Всё нужное — сразу</strong><span>Запускайте игру одним нажатием.</span></figcaption>
+          </figure>
+          <figure class="screenshot">
+            <img src="assets/screenshots/02-level-selection.png" alt="Экран выбора уровня" width="647" height="1400" loading="lazy">
+            <figcaption><strong>Уровни и прогресс</strong><span>Возвращайтесь к текущей сетке или открывайте следующую.</span></figcaption>
+          </figure>
+          <figure class="screenshot">
+            <img src="assets/screenshots/03-gameplay.png" alt="Игровая сетка русского сканворда" width="647" height="1400" loading="lazy">
+            <figcaption><strong>Сетка в центре внимания</strong><span>Выберите вопрос и соберите ответ на удобной клавиатуре.</span></figcaption>
+          </figure>
+          <figure class="screenshot">
+            <img src="assets/screenshots/05-hint.png" alt="Подсказка с перемешанными буквами" width="647" height="1400" loading="lazy">
+            <figcaption><strong>Подсказки рядом</strong><span>Когда слово ускользает, игра мягко помогает двигаться дальше.</span></figcaption>
+          </figure>
+          <figure class="screenshot">
+            <img src="assets/screenshots/05-win-reward.png" alt="Награда за завершение уровня" width="647" height="1400" loading="lazy">
+            <figcaption><strong>Награда за уровень</strong><span>Завершайте сетки, получайте монеты и продолжайте игру.</span></figcaption>
+          </figure>
+          <figure class="screenshot">
+            <img src="assets/screenshots/04-store.png" alt="Магазин монет и отключения рекламы" width="647" height="1400" loading="lazy">
+            <figcaption><strong>Вы решаете сами</strong><span>Монеты и отключение рекламы собраны в отдельном разделе.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
 
+    <section class="wrap note">
+      <div>
+        <p class="eyebrow dark">Язык игры</p>
+        <h2>Сетки, вопросы и ответы сейчас доступны на русском языке.</h2>
+      </div>
+      <p>Интерфейс сайта доступен на русском и английском. Английская страница поможет познакомиться с приложением, но сами сканворды пока остаются русскоязычными.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
       <nav aria-label="Документы и поддержка">
         <a href="support.html">Поддержка</a>
         <a href="privacy.html">Privacy Policy</a>
         <a href="terms.html">Terms of Use</a>
-        <a href="mailto:u4170218021@gmail.com">u4170218021@gmail.com</a>
+        <a href="mailto:u4170218021@gmail.com">Email</a>
       </nav>
-
-      <footer>© 2026 Dima Ershov</footer>
+      <span>© 2026 Dima Ershov</span>
     </div>
-  </main>
+  </footer>
 </body>
 </html>

@@ -229,8 +229,8 @@ h2 {
 }
 
 .product-shot-iphone {
-  width: min(42vw, 335px);
-  min-width: 250px;
+  width: min(34vw, 268px);
+  min-width: 200px;
   height: auto;
   margin-right: -34px;
   border-radius: 32px;
@@ -285,8 +285,58 @@ h2 {
 
 .section-heading { max-width: 720px; }
 
-.gallery {
+.device-tabs {
+  margin-top: 36px;
+}
+
+.device-tab-input {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.device-switch {
+  display: inline-flex;
+  gap: 6px;
+  padding: 5px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--ice);
+}
+
+.device-switch label {
+  min-width: 104px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 850;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+#device-iphone-ru:checked ~ .device-switch label[for="device-iphone-ru"],
+#device-ipad-ru:checked ~ .device-switch label[for="device-ipad-ru"],
+#device-iphone-en:checked ~ .device-switch label[for="device-iphone-en"],
+#device-ipad-en:checked ~ .device-switch label[for="device-ipad-en"] {
+  color: var(--white);
+  background: var(--blue);
+  box-shadow: 0 10px 22px rgba(23, 111, 168, .22);
+}
+
+.device-panel { display: none; }
+
+#device-iphone-ru:checked ~ .device-panels .iphone-gallery,
+#device-ipad-ru:checked ~ .device-panels .ipad-gallery,
+#device-iphone-en:checked ~ .device-panels .iphone-gallery,
+#device-ipad-en:checked ~ .device-panels .ipad-gallery {
   display: flex;
+}
+
+.gallery {
   gap: 24px;
   margin: 42px 0 0;
   padding: 0 0 28px;
@@ -375,7 +425,7 @@ h2 {
   .hero { min-height: 600px; }
   .hero-content { grid-template-columns: 1fr; gap: 34px; padding: 58px 0 80px; }
   .hero-product { min-height: 430px; justify-content: center; }
-  .product-shot-iphone { width: min(54vw, 270px); min-width: 210px; margin-right: -28px; }
+  .product-shot-iphone { width: min(43vw, 216px); min-width: 168px; margin-right: -28px; }
   .intro, .note { grid-template-columns: 1fr; gap: 18px; }
   .features { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -386,7 +436,7 @@ h2 {
   .topbar { padding-top: 20px; }
   .hero-content { padding: 46px 0 70px; }
   .hero-product { min-height: 315px; }
-  .product-shot-iphone { width: 46vw; min-width: 165px; margin-right: -16px; border-radius: 22px; }
+  .product-shot-iphone { width: 37vw; min-width: 132px; margin-right: -16px; border-radius: 22px; }
   h1 { font-size: clamp(43px, 14vw, 64px); }
   .section, .showcase { padding-top: 68px; }
   .features { grid-template-columns: 1fr; padding-bottom: 72px; }

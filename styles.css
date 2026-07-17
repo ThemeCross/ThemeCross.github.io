@@ -145,6 +145,24 @@ h2 {
   outline-offset: -1px;
 }
 
+.ios-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.ios-mark {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  color: var(--white);
+  background: var(--deep);
+  font-size: 16px;
+  line-height: 1;
+}
+
 .android-soon {
   display: inline-flex;
   align-items: center;

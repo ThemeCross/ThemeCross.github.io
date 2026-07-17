@@ -145,19 +145,46 @@ h2 {
   outline-offset: -1px;
 }
 
-.platform-note {
+.android-soon {
   display: inline-flex;
   align-items: center;
-  min-height: 48px;
-  padding: 0 18px;
-  border-radius: 999px;
-  color: #d8edfb;
-  background: rgba(255, 255, 255, .10);
-  font-size: 15px;
-  font-weight: 800;
-  letter-spacing: .01em;
-  outline: 1px solid rgba(255, 255, 255, .20);
+  gap: 9px;
+  color: var(--white);
+  background: rgba(74, 201, 105, .18);
+  box-shadow: none;
+  outline: 1px solid rgba(74, 201, 105, .45);
   outline-offset: -1px;
+  cursor: default;
+  user-select: none;
+}
+
+.android-mark {
+  position: relative;
+  width: 18px;
+  height: 14px;
+  border-radius: 8px 8px 4px 4px;
+  background: var(--green);
+}
+
+.android-mark::before,
+.android-mark::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  width: 2px;
+  height: 7px;
+  border-radius: 99px;
+  background: var(--green);
+}
+
+.android-mark::before {
+  left: 4px;
+  transform: rotate(-28deg);
+}
+
+.android-mark::after {
+  right: 4px;
+  transform: rotate(28deg);
 }
 
 .section { padding: 88px 0 48px; }

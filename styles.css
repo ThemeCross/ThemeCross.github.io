@@ -133,6 +133,7 @@ h2 {
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 12px;
 }
 
@@ -141,6 +142,21 @@ h2 {
   background: rgba(255, 255, 255, .12);
   box-shadow: none;
   outline: 1px solid rgba(255, 255, 255, .24);
+  outline-offset: -1px;
+}
+
+.platform-note {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 18px;
+  border-radius: 999px;
+  color: #d8edfb;
+  background: rgba(255, 255, 255, .10);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: .01em;
+  outline: 1px solid rgba(255, 255, 255, .20);
   outline-offset: -1px;
 }
 

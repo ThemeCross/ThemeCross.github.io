@@ -171,7 +171,7 @@ h2 {
   line-height: 1;
 }
 
-.android-soon {
+.android-button {
   display: inline-flex;
   align-items: center;
   gap: 9px;
@@ -180,8 +180,10 @@ h2 {
   box-shadow: none;
   outline: 1px solid rgba(74, 201, 105, .45);
   outline-offset: -1px;
-  cursor: default;
-  user-select: none;
+}
+
+.android-button:hover {
+  background: rgba(74, 201, 105, .28);
 }
 
 .android-mark {

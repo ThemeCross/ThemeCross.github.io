@@ -186,6 +186,21 @@ h2 {
   background: rgba(74, 201, 105, .28);
 }
 
+.rustore-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--white);
+  background: rgba(78, 142, 255, .22);
+  box-shadow: none;
+  outline: 1px solid rgba(118, 169, 255, .62);
+  outline-offset: -1px;
+}
+
+.rustore-button:hover {
+  background: rgba(78, 142, 255, .34);
+}
+
 .android-mark {
   position: relative;
   width: 18px;

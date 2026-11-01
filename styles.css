@@ -321,9 +321,7 @@ h2 {
 }
 
 #device-iphone-ru:checked ~ .device-switch label[for="device-iphone-ru"],
-#device-ipad-ru:checked ~ .device-switch label[for="device-ipad-ru"],
-#device-iphone-en:checked ~ .device-switch label[for="device-iphone-en"],
-#device-ipad-en:checked ~ .device-switch label[for="device-ipad-en"] {
+#device-ipad-ru:checked ~ .device-switch label[for="device-ipad-ru"] {
   color: var(--white);
   background: var(--blue);
   box-shadow: 0 10px 22px rgba(23, 111, 168, .22);
@@ -332,9 +330,7 @@ h2 {
 .device-panel { display: none; }
 
 #device-iphone-ru:checked ~ .device-panels .iphone-gallery,
-#device-ipad-ru:checked ~ .device-panels .ipad-gallery,
-#device-iphone-en:checked ~ .device-panels .iphone-gallery,
-#device-ipad-en:checked ~ .device-panels .ipad-gallery {
+#device-ipad-ru:checked ~ .device-panels .ipad-gallery {
   display: flex;
 }
 

@@ -1,0 +1,45 @@
+:root {
+  color-scheme: dark;
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #fff;
+  background: #082f50;
+}
+* { box-sizing: border-box; }
+body {
+  min-height: 100vh;
+  margin: 0;
+  background: radial-gradient(ellipse at 80% 0%, #1a6498 0, transparent 60%),
+    linear-gradient(140deg, #123b62, #061e34);
+}
+.games {
+  width: min(900px, calc(100% - 40px));
+  margin-inline: auto;
+  padding-block: clamp(48px, 11vw, 128px);
+}
+h1 {
+  margin: 0 0 .65em;
+  font-size: clamp(2.45rem, 7vw, 5rem);
+  line-height: 1.05;
+  letter-spacing: -.05em;
+}
+.game-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.game-card {
+  display: block;
+  padding: clamp(20px, 4vw, 32px);
+  border: 1px solid #90aec6;
+  border-radius: 24px;
+  color: #fff;
+  background: #082844;
+  text-decoration: none;
+}
+.game-card:hover, .game-card:focus-visible {
+  border-color: #ffce69;
+  outline: 2px solid #ffce69;
+  outline-offset: 3px;
+}
+.game-card img { display: block; border-radius: 20px; margin-bottom: 1rem; }
+.game-card h2 { margin: 0; font-size: clamp(1.35rem, 3vw, 1.8rem); line-height: 1.15; }
+.game-card p { margin: .6em 0 0; color: #d8edfb; }
+@media (max-width: 620px) {
+  .game-list { grid-template-columns: 1fr; }
+}

@@ -3,183 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Сканворд 2026 — современные русские сканворды: более 200 уровней, новые сетки каждую неделю, подсказки и игра без интернета.">
+  <meta name="theme-color" content="#082f50">
+  <meta name="description" content="Русские словесные игры ThemeCross: «Сканворд 2026» и «Ключевое слово 2026».">
   <link rel="canonical" href="https://themecross.github.io/">
-  <link rel="alternate" hreflang="ru" href="https://themecross.github.io/">
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="ru_RU">
-  <meta property="og:title" content="Сканворд 2026 — Просто Сканворд">
-  <meta property="og:description" content="Более 200 русских уровней, новые сетки каждую неделю, подсказки и игра без интернета.">
-  <meta property="og:url" content="https://themecross.github.io/">
-  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <meta name="theme-color" content="#0b3a66">
-  <link rel="stylesheet" href="styles.css?v=20260906a">
-  <title>Сканворд 2026 — Просто Сканворд</title>
+  <link rel="icon" href="/assets/favicon/favicon-32.png">
+  <link rel="stylesheet" href="/games.css">
+  <title>Игры ThemeCross</title>
 </head>
 <body>
-  <header class="hero">
-    <div class="wrap hero-inner">
-      <nav class="topbar" aria-label="Выбор языка">
-        <a class="brand" href="./">Сканворд 2026</a>
-        <div class="language-switcher">
-          <span aria-current="page">RU</span>
-        </div>
-      </nav>
-      <div class="hero-content">
-        <div class="hero-copy">
-          <p class="eyebrow">Сканворды для спокойной игры</p>
-          <h1>Просто Сканворд</h1>
-          <p class="lead">Современные русские сетки, понятные вопросы и чистый экран игры. Более 200 уровней, новые сканворды каждую неделю.</p>
-          <div class="hero-actions">
-            <a class="button ios-button" href="https://apps.apple.com/us/app/arrowword-2026-rus-vocab/id6781316183">
-              <span class="ios-mark" aria-hidden="true"></span>
-              iPhone и iPad — App Store
-            </a>
-            <a class="button android-button" href="https://play.google.com/store/apps/details?id=com.themecross.android">
-              <span class="android-mark" aria-hidden="true"></span>
-              Android — Google Play
-            </a>
-            <a class="button rustore-button" href="https://www.rustore.ru/catalog/app/com.themecross.android.rustore">
-              <span aria-hidden="true">▣</span>
-              Android — RuStore
-            </a>
-            <a class="button secondary" href="#screenshots">Посмотреть игру</a>
-          </div>
-        </div>
-        <div class="hero-product" aria-label="Скриншот приложения на iPhone">
-          <img class="product-shot product-shot-iphone" src="assets/promo/iphone-main-1242x2688.png" alt="Сканворд 2026 на iPhone" width="1242" height="2688">
-        </div>
-      </div>
+  <main class="games">
+    <h1>Игры ThemeCross</h1>
+    <div class="game-list">
+      <a class="game-card" href="/scanword/">
+        <img src="/assets/favicon/apple-touch-icon.png" alt="" width="88" height="88">
+        <h2>Сканворд 2026</h2>
+        <p>Выберите вопрос и заполните сетку.</p>
+      </a>
+      <a class="game-card" href="/keyword/">
+        <img src="/keyword/assets/keyword.png" alt="" width="88" height="88">
+        <h2>Ключевое слово 2026</h2>
+        <p>Ответьте на вопросы и прочитайте секретное слово по золотым клеткам.</p>
+      </a>
     </div>
-  </header>
-
-  <main>
-    <section class="section wrap intro">
-      <div>
-        <p class="eyebrow dark">Просто начать</p>
-        <h2>Выберите вопрос — и заполните сетку</h2>
-      </div>
-      <div class="intro-copy">
-        <p>Современные сканворды с живой лексикой, понятными вопросами и удобной клавиатурой.</p>
-        <p>В приложении уже более 200 русских уровней. Новые сканворды добавляются каждую неделю, а прогресс сохраняется автоматически.</p>
-      </div>
-    </section>
-
-    <section class="features wrap" aria-label="Особенности приложения">
-      <article class="feature">
-        <strong>Русская коллекция</strong>
-        <p>Вопросы и ответы — на живом современном русском языке.</p>
-      </article>
-      <article class="feature">
-        <strong>200+ уровней</strong>
-        <p>Большая коллекция доступна сразу.</p>
-      </article>
-      <article class="feature">
-        <strong>Новые каждую неделю</strong>
-        <p>Регулярные пополнения коллекции.</p>
-      </article>
-      <article class="feature">
-        <strong>Чистый интерфейс</strong>
-        <p>Сетка, вопрос и ответ всегда в центре внимания.</p>
-      </article>
-    </section>
-
-    <section class="showcase" id="screenshots">
-      <div class="wrap">
-        <div class="section-heading">
-          <p class="eyebrow dark">Как это выглядит</p>
-          <h2>От первого экрана до разгаданной сетки</h2>
-        </div>
-        <div class="device-tabs">
-          <input class="device-tab-input" type="radio" name="device-ru" id="device-iphone-ru" checked>
-          <input class="device-tab-input" type="radio" name="device-ru" id="device-ipad-ru">
-          <div class="device-switch" aria-label="Выбор устройства">
-            <label for="device-iphone-ru">Смартфон</label>
-            <label for="device-ipad-ru">Планшет</label>
-          </div>
-          <div class="device-panels">
-            <div class="gallery device-panel iphone-gallery" aria-label="Скриншоты приложения для iPhone">
-              <figure class="screenshot">
-                <img src="assets/screenshots/iphone/iPhone-main-1242x2688.png" alt="Главное меню приложения Сканворд 2026 — Просто Сканворд на iPhone" width="1242" height="2688" loading="lazy">
-                <figcaption><strong>Всё нужное — сразу</strong><span>Запускайте игру одним нажатием.</span></figcaption>
-              </figure>
-              <figure class="screenshot">
-                <img src="assets/screenshots/iphone/iPhone-levels-1242x2688.png" alt="Экран выбора уровня на iPhone" width="1242" height="2688" loading="lazy">
-                <figcaption><strong>Уровни и прогресс</strong><span>Возвращайтесь к текущей сетке или открывайте следующую.</span></figcaption>
-              </figure>
-              <figure class="screenshot">
-                <img src="assets/screenshots/iphone/iPhone-play-1242x2688.png" alt="Игровая сетка русского сканворда на iPhone" width="1242" height="2688" loading="lazy">
-                <figcaption><strong>Сетка в центре внимания</strong><span>Выберите вопрос и соберите ответ на удобной клавиатуре.</span></figcaption>
-              </figure>
-              <figure class="screenshot">
-                <img src="assets/screenshots/iphone/iPhone-tip-1242x2688.png" alt="Подсказка с перемешанными буквами на iPhone" width="1242" height="2688" loading="lazy">
-                <figcaption><strong>Подсказки рядом</strong><span>Когда слово ускользает, игра мягко помогает двигаться дальше.</span></figcaption>
-              </figure>
-              <figure class="screenshot">
-                <img src="assets/screenshots/iphone/iphone-level-complete-1242x2688.png" alt="Награда за завершение уровня на iPhone" width="1242" height="2688" loading="lazy">
-                <figcaption><strong>Награда за уровень</strong><span>Завершайте сетки, получайте монеты и продолжайте игру.</span></figcaption>
-              </figure>
-              <figure class="screenshot">
-                <img src="assets/screenshots/iphone/iPhone-store-1242x2688.png" alt="Магазин монет и отключения рекламы на iPhone" width="1242" height="2688" loading="lazy">
-                <figcaption><strong>Вы решаете сами</strong><span>Монеты и отключение рекламы собраны в отдельном разделе.</span></figcaption>
-              </figure>
-            </div>
-            <div class="gallery device-panel ipad-gallery" aria-label="Скриншоты приложения для iPad">
-              <figure class="screenshot">
-                <img src="assets/screenshots/ipad/iPad-main-2048x2732.png" alt="Главное меню приложения на iPad" width="2048" height="2732" loading="lazy">
-                <figcaption><strong>Всё нужное — сразу</strong><span>Запускайте игру одним нажатием.</span></figcaption>
-              </figure>
-              <figure class="screenshot">
-                <img src="assets/screenshots/ipad/iPad-levels-2048x2732.png" alt="Экран выбора уровня на iPad" width="2048" height="2732" loading="lazy">
-                <figcaption><strong>Уровни и прогресс</strong><span>Возвращайтесь к текущей сетке или открывайте следующую.</span></figcaption>
-              </figure>
-              <figure class="screenshot">
-                <img src="assets/screenshots/ipad/iPad-play-2048x2732.png" alt="Игровая сетка русского сканворда на iPad" width="2048" height="2732" loading="lazy">
-                <figcaption><strong>Сетка в центре внимания</strong><span>Выберите вопрос и соберите ответ на удобной клавиатуре.</span></figcaption>
-              </figure>
-              <figure class="screenshot landscape">
-                <img src="assets/screenshots/ipad/iPad-play-horiz-2732x2048.png" alt="Горизонтальный режим сканворда на iPad" width="2732" height="2048" loading="lazy">
-                <figcaption><strong>Горизонтальный режим</strong><span>Больше пространства для сетки, вопроса и клавиатуры.</span></figcaption>
-              </figure>
-              <figure class="screenshot landscape">
-                <img src="assets/screenshots/ipad/iPad-tip-horiz-2732x2048.png" alt="Подсказка в горизонтальном режиме на iPad" width="2732" height="2048" loading="lazy">
-                <figcaption><strong>Подсказки рядом</strong><span>Когда слово ускользает, игра мягко помогает двигаться дальше.</span></figcaption>
-              </figure>
-              <figure class="screenshot">
-                <img src="assets/screenshots/ipad/iPad-end-2048x2732.png" alt="Награда за завершение уровня на iPad" width="2048" height="2732" loading="lazy">
-                <figcaption><strong>Награда за уровень</strong><span>Завершайте сетки, получайте монеты и продолжайте игру.</span></figcaption>
-              </figure>
-              <figure class="screenshot">
-                <img src="assets/screenshots/ipad/iPad-store-2048x2732.png" alt="Магазин монет и отключения рекламы на iPad" width="2048" height="2732" loading="lazy">
-                <figcaption><strong>Вы решаете сами</strong><span>Монеты и отключение рекламы собраны в отдельном разделе.</span></figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="wrap note">
-      <div>
-        <p class="eyebrow dark">Русская коллекция</p>
-        <h2>Русские сетки, понятные вопросы и спокойная игра.</h2>
-      </div>
-      <p>Разгадывайте русские сканворды в удобном темпе: прогресс сохраняется, подсказки всегда рядом, а загруженные уровни доступны без интернета.</p>
-    </section>
   </main>
-
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <nav aria-label="Документы и поддержка">
-        <a href="support.html">Поддержка</a>
-        <a href="privacy.html">Политика конфиденциальности</a>
-        <a href="terms.html">Условия использования</a>
-        <a href="mailto:u4170218021@gmail.com">Почта</a>
-      </nav>
-      <span>© 2026 ThemeCross</span>
-    </div>
-  </footer>
 </body>
 </html>

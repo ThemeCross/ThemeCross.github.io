@@ -1,0 +1,25 @@
+{
+  "name": "Слово-ключ",
+  "short_name": "Слово-ключ",
+  "id": "/keyword/",
+  "start_url": "/keyword/",
+  "scope": "/keyword/",
+  "lang": "ru",
+  "icons": [
+    {
+      "src": "/keyword/assets/favicon/icon-192.png?v=3",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/keyword/assets/favicon/icon-512.png?v=3",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "theme_color": "#082f50",
+  "background_color": "#061e34",
+  "display": "standalone"
+}

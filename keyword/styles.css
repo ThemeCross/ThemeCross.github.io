@@ -67,3 +67,9 @@ h2 { font-size: clamp(1.55rem, 3vw, 2.2rem); }
   .hero { min-height: 0; padding-block: 32px 48px; }
   .board { max-width: 425px; }
 }
+
+/* Keyword brand assets, shared by landing and service pages. */
+.nav > .brand { display: inline-flex; align-items: center; gap: .65rem; }
+.nav .brand img { flex: 0 0 36px; border-radius: 9px; }
+.nav .brand > span { display: block; font-size: inherit; }
+.board .board-logo { width: 104px; height: 104px; border-radius: 24px; }
